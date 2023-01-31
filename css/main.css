@@ -1,0 +1,142 @@
+/* Reset browser style */
+*, *:before, *:after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #edeef3;
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #3f444a;
+}
+
+
+.container {
+  max-width: 1026px;
+  margin: 0 auto;
+}
+
+
+/* Header and search */
+.header-wrapper {
+  height: 100%;
+  padding-top: 68px;
+  background: linear-gradient(92.33deg, #087990 0.12%, #055160 100%);
+  text-align: center;
+  color: #cff4fc;
+}
+
+.header__title {
+  font-weight: 700;
+  font-size: 72px;
+  margin-bottom: 4px;
+}
+
+.header__subtitle {
+  font-size: 21px;
+  margin-bottom: 36px;
+}
+
+.header__input {
+  width: 820px;
+  padding: 22px 32px;
+  font-size: 24px;
+  transform: translateY(50%);
+  color: #ABB5BE;
+  border: 1px solid #CED4DA;
+  border-radius: 4px;
+}
+
+.header__input::placeholder  {
+  color: #ABB5BE;
+
+}
+
+.header__input:focus {
+  outline: none;
+}
+
+/* Main emoji block */
+.main-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 22px 19px;
+  padding: 80px 0 50px;
+  height: 100%;
+}
+
+.emoji-wrapper {
+  padding: 24px;
+  background-color: #fff;
+  text-align: center;
+  border: 1px solid #DEE2E6;
+  border-radius: 4px;
+}
+
+.emoji__symbol {
+  font-size: 48px;
+  margin-bottom: 18px;
+}
+
+.emoji__title{
+  font-weight: 700;
+  font-size: 17px;
+  text-decoration-line: underline;
+  color: #000;
+  margin-bottom: 12px;
+}
+
+.emoji__keywords{
+  font-size: 12px;
+ }
+
+
+/* Footer */
+.footer-wrapper {
+  position: fixed;
+  bottom: 0;
+  background-color: #edeef3;
+  text-align: center;
+  width: 100%;
+  padding-bottom: 17px;
+}
+
+.footer__line {
+  border: 1px solid #CED4DA;
+  margin-bottom: 13px;
+}
+
+.footer__copyright {
+  margin: 0 auto;
+  font-size: 16px;
+  color: #6c757d;
+}
+
+/* pagination */
+.pagination-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pagination__list {
+  display: flex;
+  align-items: flex-start;
+  list-style-type: none;
+}
+
+.pagination__link {
+  color: #055160;
+  background: #fff;
+  border: 1px solid #DEE2E6;
+}
+
+.pagination__link--active {
+  color: #fff;
+  background: #055160;
+  border: 1px solid #055160;
+}
